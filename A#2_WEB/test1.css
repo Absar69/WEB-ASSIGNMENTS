@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  header {
+    background-color: orange;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 50px;
+  }
+
+  #logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  nav {
+    display: flex;
+    justify-content:left; 
+    margin-right: auto;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 15px;
+    
+  }
+
+  #cart {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+  }
+
+  #cart img {
+    width: 30px;
+    margin-right: 5px;
+  }
+
+
+  .slider {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+  }
+  
+  .slide {
+    width: 100%;
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  input[type="radio"] {
+    display: none;
+  }
+  
+  #slide1:checked ~ .slides #slide1,
+  #slide2:checked ~ .slides #slide2 {
+    display: block;
+  }
+  
+
+  @keyframes slideAnimation {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  .slides {
+    animation: slideAnimation 8s infinite;
+  }
+
+  .player-section {
+    text-align: center;
+  }
+  
+  .players-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .messi,
+  .ronaldo,
+  .neymar {
+    width: 20%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(55, 6, 187, 0.4), 0 6px 20px 0 rgba(165, 3, 3, 0.24);
+    margin-bottom: 25px;
+    position: relative;
+    flex: 1;
+    max-width: 100%;
+    height: 80%;
+    
+  }
+  
+  .content {
+    text-align: center;
+    padding: 20px 30px;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 28px;
+    font-weight: 100;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    text-align: center;
+  }
+  
+  .circular-animation:hover img,
+  .spinning-animation:hover img {
+    animation: circularMotion 5s infinite linear;
+  }
+  
+  @keyframes circularMotion {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spinning-animation:hover img {
+    animation: spinAnimation 3s infinite linear;
+  }
+  
+  @keyframes spinAnimation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .custom-section {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .custom-section h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .custom-section p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .custom-section .order-button {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-section .order-button:hover {
+    background-color: #45a049; 
+  }
+  
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+#log{
+    margin-left: 60%;
+}
+
+
+section.about {
+    padding: 30px;
+    text-align: left;
+    margin: 4rem;
+    background-color: white;
+    transform-origin: center;
+    border-radius: 1rem;
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #e0e0e0;
+}
+
+section.about:hover {
+    transform: scale(1.1);
+}
+
+
+section.about h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+
+.section-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+}
+
+.section-container .DATA h1 {
+    text-align: center;
+    color: #333;
+}
+
+.section-container .DATA form {
+    text-align: left;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.section-container .DATA label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.section-container .DATA input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.section-container .button1,
+.section-container .button2 {
+    background-color: #04AA6D;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    width: 48%; 
+    margin-right: 2%;
+}
+
+.section-container .button2 {
+    padding: 10px 32px;
+    width: 48%; 
+    margin-right: 0;
+}
+
+footer{
+     text-align: center;
+     padding: 20px;
+     background-color: orange;
+     color:orange;
+    }
